@@ -1,0 +1,50 @@
+.card{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.container{
+    --main-color:  rgb(0, 109, 199);
+    --second-color: rgb(255, 183, 88);
+    flex-grow: 1;
+}
+
+.container a{
+    color: var(--main-color);
+}
+
+.container a:hover,
+.container a:focus{
+    text-decoration: underline;
+}
+
+.content{
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+.header{
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+.borderBottom{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.timeInfo{
+    padding: .5rem 0;
+}
