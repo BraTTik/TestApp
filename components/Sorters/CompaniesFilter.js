@@ -41,7 +41,7 @@ const CompaniesFilter = () => {
     const { result } = data;
 
     return (
-        <PanelSection title="Авиакомпании">
+        <PanelSection title="Авиакомпании" style={{overflow: "hidden"}}>
             {
                 result.map( (item, i) => (
                     <div style={{display: 'flex', justifyContent: 'space-between',}} key = {i + 'carrier'}>

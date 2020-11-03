@@ -61,6 +61,7 @@
     padding: 0 .5rem;
     color: var(--second-color);
     font-size: .9rem;
+    white-space: nowrap;
 }
 
 .segmentSeparator{
