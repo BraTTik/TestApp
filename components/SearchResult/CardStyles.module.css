@@ -1,11 +1,13 @@
 .card{
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .container{
     --main-color:  rgb(0, 109, 199);
     --second-color: rgb(255, 183, 88);
+    --second-color-darker: rgb(255, 158, 31);
+    --second-color-darkest: rgb(224, 145, 42);
     flex-grow: 1;
 }
 
@@ -47,4 +49,41 @@
 
 .timeInfo{
     padding: .5rem 0;
+}
+
+.line{
+    max-width: 200px;
+    width: 40%;
+    border-bottom: 1px solid #ccc;
+}
+
+.transferInfo{
+    padding: 0 .5rem;
+    color: var(--second-color);
+    font-size: .9rem;
+}
+
+.segmentSeparator{
+    width: 100%;
+    border-top: 2px solid var(--main-color);
+}
+
+.cardButton{
+    width: 100%;
+    background-color: var(--second-color);
+    color: #fff;
+    border: none;
+    transition: background-color .2s ease;
+    padding: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cardButton:hover,
+.cardButton:focus{
+    background-color: var(--second-color-darker);
+}
+
+.cardButton:active{
+    background-color: var(--second-color-darkest);
 }

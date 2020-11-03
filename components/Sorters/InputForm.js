@@ -4,8 +4,8 @@ export const InputForm = ( {id = '', name = '', label = '', className = '', ...i
     return (
         <div className={className}>
             <input id={id} name={name} {...inputParams}/> 
-            { label && '-' }
-            <label htmlFor={id}>{label}</label>
+            { label && ' - ' }
+            <label htmlFor={id} style={{cursor: 'pointer'}}>{label}</label>
         </div>
     )
 }

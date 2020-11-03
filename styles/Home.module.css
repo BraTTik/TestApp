@@ -3,6 +3,12 @@
   justify-content: center;
 }
 
+.loaderContainer{
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
 .main{
   min-height: 100vh;
   max-width: 800px;
@@ -18,6 +24,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.overflow{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.overflow:hover{
+  white-space: normal;
+  overflow: visible;
 }
 
 

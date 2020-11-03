@@ -1,11 +1,11 @@
 import styles from './CardStyles.module.css';
 import Link from 'next/link';
 import moment from 'moment';
+import { wordHelper } from '../../lib/helpers';
 
 
 
 export const CardSegment = ( {duration, segments} ) => {
-    console.log(segments);
     const last = segments.length - 1;
     const hours = Math.floor(duration / 60);
     const mins = duration % 60;
@@ -49,6 +49,19 @@ export const CardSegment = ( {duration, segments} ) => {
                    </Link>
                     {' ' +arrivalTime}
                 </div>
+            </div>
+            <div className={`${styles.center}`} style={{justifyContent: "center"}}>
+                <span className={styles.line}></span>
+                {segments.length > 1 ? 
+                    <span className={styles.transferInfo}>
+                        {wordHelper(segments.length - 1)}
+                    </span> 
+                    :
+                    ''}
+                <span className={styles.line}></span>
+            </div>
+            <div>
+                <small>Рейс выполняет {segments[0].airline.caption}</small>
             </div>
         </div>
     )
